@@ -1,0 +1,40 @@
+<style>
+    div.message{
+        display: inline-block;
+        border: 2px dashed #cccccc;
+        padding: 1em;
+        box-shadow: 0 0 10px 10px #eeeeee inset;
+    }
+    div.message h2{
+        margin-top: 0;
+    }
+    div.message blockquote{
+        background-color: #ffffff;
+        padding: 5px;
+    }
+    div.edit ul li{
+        display: inline-block;
+    }
+    div.edit ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+</style>
+<h1>Listing hellos</h1>
+<%= link_to 'New Hello', new_hello_path %>
+<hr>
+<% @hellos.each do |hello| %>
+    <div class="message">
+      <h2>From: <span class="author"><%= hello.from %></span></h2>
+      <blockquote style="box-shadow: 0 0 10px 10px <%= hello.color %>;"><%= hello.message[0..99] %><%= link_to '...', hello %></blockquote>
+      <div class="edit"><ul>
+        <li><%= link_to 'Edit', edit_hello_path(hello) %></li>
+        <li><%= link_to 'Destroy', hello, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul></div>
+    </div>
+<% end %>
+
+
+

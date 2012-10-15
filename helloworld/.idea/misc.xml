@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSHintConfiguration">
+    <option bitwise="true" />
+    <option curly="true" />
+    <option noarg="true" />
+    <option forin="true" />
+    <option strict="true" />
+    <option noempty="true" />
+    <option undef="true" />
+    <option eqeqeq="true" />
+    <option nonew="true" />
+    <option browser="true" />
+    <option maxerr="50" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>jar:file:\C:\Program Files (x86)\JetBrains\RubyMine 4.5.4\lib\rubymine.jar!\resources\html5-schema\html5.rnc</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="ruby-1.9.3-p194" project-jdk-type="RUBY_SDK" />
+</project>
+

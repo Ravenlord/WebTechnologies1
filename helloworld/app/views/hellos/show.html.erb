@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<div class="message">
+  <p><span class="author"><%= @hello.from %></span> says:</p>
+  <blockquote class="text" style="color: <%= @hello.color %>"><%= @hello.message %></blockquote>
+</div>
+
+<%= link_to 'Edit', edit_hello_path(@hello) %> |
+<%= link_to 'Back', hellos_path %> |
+<%= link_to 'All Messages', hellos_url %>
